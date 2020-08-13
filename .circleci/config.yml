@@ -4,12 +4,12 @@ orbs:
 jobs:
     test:
         steps:
-            run:
-                test:
+            - checkout
+            - run: npm run test
     build:
         steps:
-            run:
-                start:
+            - checkout
+            - run: npm run start
 workflows:
     node-tests:
         jobs:
