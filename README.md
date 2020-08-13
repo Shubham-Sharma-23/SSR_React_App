@@ -1,1 +1,3 @@
-# SSS_React_APP
+# Server Side Rendered React
+
+A bare-bone implementation of server-side react

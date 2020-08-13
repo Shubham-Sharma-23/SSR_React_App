@@ -1,0 +1,10 @@
+dist/*
+src/assets/*
+*.html
+/src/**/__snapshots__/
+*.json
+.next/
+i18n.js
+next.config.js
+prismic-configuration.js
+server.js
