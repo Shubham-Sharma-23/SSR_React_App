@@ -19,7 +19,6 @@
         "es6": true,
         "jest": true
     },
-    "plugins": ["react", "react-hooks"],
     "globals": {
         "SyntheticEvent": true,
         "SyntheticAnimationEvent": true,
