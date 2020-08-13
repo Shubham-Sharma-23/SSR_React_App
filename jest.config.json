@@ -1,0 +1,11 @@
+{
+    "verbose": true,
+    "testMatch": ["**/?(*.)+(test).[jt]s?(x)"],
+    "setupFilesAfterEnv": ["./src/test/testSetup.js"],
+    "moduleFileExtensions": ["js", "jsx"],
+    "collectCoverage": true,
+    "coverageReporters": ["lcov", "text"],
+    "coverageDirectory": "<rootDir>/coverage-report",
+    "collectCoverageFrom": ["!src/**/test/*.{js, jsx}", "src/**/*.{js,jsx}"],
+    "roots": ["<rootDir>"]
+}
