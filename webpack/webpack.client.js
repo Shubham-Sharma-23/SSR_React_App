@@ -18,6 +18,21 @@ const config = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "../public"),
     },
+    module: {
+        rules: [
+            {
+                test: /.(css|scss)$/,
+                use: [
+                    // fallback to style-loader in development
+                    // "isomorphic-style-loader",
+
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
+            },
+        ],
+    },
 };
 
 module.exports = merge(common, config);

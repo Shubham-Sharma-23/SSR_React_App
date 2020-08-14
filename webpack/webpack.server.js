@@ -11,6 +11,9 @@ const server = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "../build"),
     },
+    module: {
+        rules: [{ test: /.(css|scss)$/, use: ["ignore-loader"] }],
+    },
     externals: [webpackNodeExternals()],
 };
 

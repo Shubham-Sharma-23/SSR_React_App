@@ -26,7 +26,7 @@ const HomepageTemplate = () => {
     return (
         <Container fluid className="programs">
             <Row>
-                {programData.slice(0, 20).map((item) => (
+                {programData.map((item) => (
                     <Col xs={12} sm={6} md={3}>
                         <ProgramCard {...item} />
                     </Col>
