@@ -1,0 +1,22 @@
+@import "../../style/variables";
+@import "../../style/layout";
+
+.programs {
+    .program-card-container {
+        background: $white;
+        margin-bottom: 3%;
+        padding: 2%;
+        border-radius: 10px;
+        @include desktop() {
+            width: 23%;
+            margin: 1%;
+            max-width: 23%;
+        }
+        @include tablet-only() {
+            width: 48%;
+            margin: 1%;
+            max-width: 48%;
+            flex: 0 0 48%;
+        }
+    }
+}

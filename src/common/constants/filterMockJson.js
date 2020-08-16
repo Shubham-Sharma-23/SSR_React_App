@@ -1,7 +1,8 @@
-export default [
-    {
+export const filters = {
+    "f1": {
         filterId: "f1",
         filterName: "Launch Year",
+        filterParamName: 'launch_year',
         filterValues: [
             { id: "2006", value: "2006" },
             { id: "2007", value: "2007" },
@@ -19,21 +20,26 @@ export default [
             { id: "2019", value: "2019" },
             { id: "2020", value: "2020" },
         ],
+        selectedValue: ''
     },
-    {
+    "f2": {
         filterId: "f2",
         filterName: "Successful Launch",
+        filterParamName: 'launch_success',
         filterValues: [
             { id: "True", value: "True" },
             { id: "False", value: "False" },
         ],
+        selected: ''
     },
-    {
+    "f3": {
         filterId: "f3",
         filterName: "Successful Landing",
+        filterParamName: 'land_success',
         filterValues: [
             { id: "True", value: "True" },
             { id: "False", value: "False" },
         ],
+        selected: ''
     },
-];
+};

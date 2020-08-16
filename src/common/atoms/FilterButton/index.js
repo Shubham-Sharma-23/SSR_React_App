@@ -1,10 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import "./FilterButton.scss";
 
 const FilterButton = ({ children, callBack, value, selected, id }) => {
     return (
-        <button id={id} className={classNames("button", { selected: selected })} onClick={(e) => callBack(e, value)}>
+        <button
+            id={id}
+            className={classNames("filter-button", { selected: selected })}
+            onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                callBack(e, value);
+            }}
+            type="button"
+        >
             {children}
         </button>
     );

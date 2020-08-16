@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./SubTitle.scss";
 
-const SubTitle = ({ children }) => <span className="sub-title">{children}</span>;
+const SubTitle = ({ children }) => <div className="sub-title">{children}</div>;
 
 export default SubTitle;
 

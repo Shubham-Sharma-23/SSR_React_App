@@ -1,6 +1,8 @@
 import React from "react";
-import { Row, Col, Container } from "reactstrap";
 import { Title, Info, CardImage } from "../../atoms";
+import { toString } from "lodash";
+
+import "./ProgramCard.scss";
 
 const ProgramCard = ({
     id,
@@ -12,11 +14,11 @@ const ProgramCard = ({
     imageLinkLarge,
     imageLinkSmall,
 }) => (
-    <div id={id}>
-        <div>
+    <div id={id} className="program-card">
+        <div className="card-image-container pb-3">
             <CardImage imageLinkSmall={imageLinkSmall} imageLinkLarge={imageLinkLarge} />
         </div>
-        <div>
+        <div className="pt-3">
             <Title>{name}</Title>
         </div>
         <div>
@@ -26,10 +28,10 @@ const ProgramCard = ({
             <Info name="Launch Year" text={launchYear} />
         </div>
         <div>
-            <Info name="Successful Launch" text={launchSuccess} />
+            <Info name="Successful Launch" text={toString(launchSuccess)} />
         </div>
         <div>
-            <Info name="Successful Landing" text={landingSuccess} />
+            <Info name="Successful Landing" text={toString(landingSuccess)} />
         </div>
     </div>
 );

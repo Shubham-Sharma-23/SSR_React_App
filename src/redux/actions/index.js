@@ -9,7 +9,7 @@ export const fetchPrograms = () => async (dispatch) => {
     // const resp = await getPrograms().then((resp) => console.log("resp", resp));
     // console.log("dispatch", dispatch);
     // const resp = await getPrograms();
-    const resp = await axios.get("https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true");
+    const resp = await axios.get("https://api.spaceXdata.com/v3/launches");
     // console.log("resp", resp);
     dispatch({
         type: FETCH_PROGRAMS,

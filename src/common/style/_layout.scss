@@ -1,0 +1,33 @@
+/*
+//
+/// Breakpoints */
+
+$layout--bp_mobile: 320px;
+$layout--bp_tablet: 768px;
+$layout--bp_desktop: 1024px;
+
+// Mobile Only
+@mixin mobile() {
+    @media screen and (max-width: $layout--bp_tablet - 1) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media screen and (min-width: $layout--bp_tablet) {
+        @content;
+    }
+}
+
+// Tablet Only
+@mixin tablet-only() {
+    @media screen and (min-width: $layout--bp_tablet) and (max-width: $layout--bp_desktop) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media screen and (min-width: $layout--bp_desktop) {
+        @content;
+    }
+}

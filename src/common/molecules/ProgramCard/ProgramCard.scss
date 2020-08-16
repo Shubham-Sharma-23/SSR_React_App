@@ -1,0 +1,11 @@
+@import "../../style/variables";
+
+.program-card {
+    .card-image-container {
+        background-color: $grey1;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

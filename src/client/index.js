@@ -12,6 +12,7 @@ import { logger } from "redux-logger";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../common/style/common.scss";
 
 const store = createStore(reducers, window.INITIAL_STATE, composeWithDevTools(applyMiddleware(thunk, logger)));
 

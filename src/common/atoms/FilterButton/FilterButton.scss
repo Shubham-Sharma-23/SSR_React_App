@@ -1,0 +1,11 @@
+.filter-button {
+    text-align: center;
+    border: none;
+    background: lightgreen;
+    border-radius: 5px;
+    padding: 0 10px;
+
+    &.selected {
+        background: limegreen;
+    }
+}
