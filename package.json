@@ -62,7 +62,7 @@
 		"webpack-cli": "^3.3.12"
 	},
 	"devDependencies": {
-		"babel-jest": "^26.3.0",
+		"babel-jest": "^26.3.0"
 	},
 	"babel": {
 		"presets": [
